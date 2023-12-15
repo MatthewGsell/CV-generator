@@ -1,0 +1,48 @@
+#workexperience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#040f0f, #248232);
+    min-height: 40vh;
+    min-width: 40vw;
+    border-radius: 40px;
+}
+#workexperience > input {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.maintaskstext {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #2d3a3a;
+}
+#buttondiv {
+    display: flex;
+    justify-content: space-around;
+}
+#addworkbutton {
+    background-color: #2d3a3a;
+    color: #2ba84a;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ 
+
+}
+#worklabel {
+    position:relative;
+    display: flex;
+    margin-left: 10%;
+    color: #fcfffc;
+    font-size: x-large
+}
+#deleteworkbutton {
+    background-color: #2d3a3a;
+    color: #a82b2b;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.hidden {
+    visibility: hidden;
+}
