@@ -133,6 +133,7 @@ function App() {
     <>
       <div id="mainwrapper">
         <div id="left">
+          <h1 id="maintitle">CV Generator!</h1>
           <PersonalInfo
             updateFirst={updateFirst}
             updateLast={updateLast}

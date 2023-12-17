@@ -64,3 +64,7 @@ button:hover {
     width: 100vw;
   }
 }
+
+#maintitle {
+  color: #248232;
+}
