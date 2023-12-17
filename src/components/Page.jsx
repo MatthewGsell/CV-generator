@@ -1,3 +1,4 @@
+import "./styles/Page.css";
 function Page({
   firstName,
   lastName,

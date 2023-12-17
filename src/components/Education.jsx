@@ -1,3 +1,4 @@
+import "./styles/Education.css";
 function Education({
   educationpiecearray,
   sendtoeducationpiecearray,

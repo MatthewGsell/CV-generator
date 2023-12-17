@@ -1,17 +1,13 @@
 import { useState, useRef } from "react";
 import "./App.css";
 import PersonalInfo from "./components/PersonalInfo";
-import "./components/PersonalInfo.css";
 import WorkExperience from "./components/WorkExperience";
 import WorkPiece from "./components/WorkPiece";
-import "./components/WorkExperience.css";
 import Education from "./components/Education";
-import "./components/Education.css";
 import EducationPiece from "./components/EducationPiece";
 import Page from "./components/Page";
-import "./components/Page.css";
 import Contact from "./components/Contact";
-import "./components/Contact.css";
+
 function printpage() {
   print();
 }

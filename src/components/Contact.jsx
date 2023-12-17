@@ -1,3 +1,4 @@
+import "./styles/Contact.css";
 function Contact({ updatePhone, updateEmail, updateWebsite }) {
   return (
     <div id="contact" className="mainbubble">
