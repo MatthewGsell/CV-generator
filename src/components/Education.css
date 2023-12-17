@@ -1,4 +1,4 @@
-#workexperience {
+#education {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,45 +7,37 @@
   min-width: 40vw;
   border-radius: 40px;
 }
-#workexperience > input {
+#education > input {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.maintaskstext {
-  margin-top: 2%;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: #2d3a3a;
-}
-#buttondiv {
+#buttondiv2 {
   display: flex;
   justify-content: space-around;
 }
-#addworkbutton {
+#addeducationbutton {
   background-color: #2d3a3a;
   color: #2ba84a;
   margin-top: 2%;
   margin-bottom: 2%;
   transition: all 0.4s ease-in-out;
 }
-#worklabel {
+#educationlabel {
   position: relative;
   display: flex;
   margin-left: 10%;
   color: #fcfffc;
   font-size: x-large;
 }
-#deleteworkbutton {
+#deleteeducationbutton {
   background-color: #2d3a3a;
   color: #a82b2b;
   margin-top: 2%;
   margin-bottom: 2%;
   transition: all 0.4s ease-in-out;
 }
-.hidden {
-  visibility: hidden;
-}
+
 button:hover {
   transform: scale(1.2);
 }

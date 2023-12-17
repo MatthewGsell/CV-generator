@@ -1,79 +1,68 @@
-import { useState } from "react"
+import { useState } from "react";
+const key0 = crypto.randomUUID();
+const key1 = crypto.randomUUID();
+const key2 = crypto.randomUUID();
+const key3 = crypto.randomUUID();
+const key4 = crypto.randomUUID();
+function WorkPiece({
+  workdataarray,
+  setworkdataarray,
+  workInteger,
+  setWorkInteger,
+  changeA,
+}) {
+  setWorkInteger(workInteger + 1);
+  function updateItem() {
+    const inputs = document.querySelectorAll(".workinput");
+    const newarray = [...inputs].map((item) => {
+      return item.value;
+    });
+    console.log(newarray);
+    setworkdataarray(newarray);
+  }
 
-function WorkPiece ({ workdataarray, setworkdataarray, integer, setInteger }) 
-{
-    const [newarray, setNewArray] = useState(['', '', '', '', ''])
-    function changestate0(event) {
-        const newnewarray = newarray.map((item, index) => {
-            if (index === 0) {
-                return event.target.value
-            }
-            else {
-                return item
-            }
-        })
-        setNewArray(newnewarray)
-   
-        
-    }
-    function changestate1(event) {
-        const newnewarray = newarray.map((item, index) => {
-            if (index === 1) {
-                return event.target.value
-            }
-            else {
-                return item
-            }
-        })
-        setNewArray(newnewarray)
-       
-        
-    }
-    function changestate2(event) {
-        const newnewarray = newarray.map((item, index) => {
-            if (index === 2) {
-                return event.target.value
-            }
-            else {
-                return item
-            }
-        })
-        setNewArray(newnewarray)
+  const arrofitems = [
+    <input
+      type="text"
+      className="positioninput workinput"
+      placeholder="Position"
+      key={key0}
+      onChange={updateItem}
+    />,
+    <input
+      type="text"
+      className="companyinput workinput"
+      placeholder="Company"
+      key={key1}
+      onChange={updateItem}
+    />,
+    <input
+      type="text"
+      className="startdateinput workinput"
+      placeholder="Start Date"
+      key={key2}
+      onChange={updateItem}
+    />,
+    <input
+      type="text"
+      className="enddateinput workinput"
+      placeholder="End Date"
+      key={key3}
+      onChange={updateItem}
+    />,
+    <textarea
+      name=""
+      className="maintaskstext workinput"
+      placeholder="Main duties and responsibilities?"
+      cols="14"
+      rows="10"
+      wrap="soft"
+      key={key4}
+      onChange={updateItem}
+    ></textarea>,
+  ];
+  setworkdataarray([...workdataarray, "", "", "", "", ""]);
 
-        
-    }
-    function changestate3(event) {
-        const newnewarray = newarray.map((item, index) => {
-            if (index === 3) {
-                return event.target.value
-            }
-            else {
-                return item
-            }
-        })
-        setNewArray(newnewarray)
-       
-        
-    }
-    function changestate4(event) {
-        const newnewarray = newarray.map((item, index) => {
-            if (index === 4) {
-                return event.target.value
-            }
-            else {
-                return item
-            }
-        })
-        setNewArray(newnewarray)
-        
-    }
-
-    const arrofitems = [        <input type="text" className="positioninput" onChange={changestate0}/>,
-    <input type="text" className="companyinput" onChange={changestate1} />,
-    <input type="text" className="startdateinput" onChange={changestate2} />,
-    <input type="text" className="enddateinput" onChange={changestate3}/>,
-    <textarea name="" className="maintaskstext" cols="14" rows="10" wrap="soft" onChange={changestate4}></textarea>]
-    setworkdataarray([...workdataarray, newarray])
-    return arrofitems
+  return arrofitems;
 }
-export default WorkPiece
+export default WorkPiece;

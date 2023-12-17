@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -11,4 +9,58 @@
 
 .mainbubble {
   margin: 50px;
+}
+#mainwrapper {
+  display: flex;
+}
+#left {
+  overflow-y: scroll;
+  height: 100vh;
+}
+#printbutton {
+  transition: all 0.4s ease-in-out;
+  height: 40px;
+  width: 80px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  background-color: #2d3a3a;
+  color: #fcfffc;
+}
+button:hover {
+  transform: scale(1.2x);
+}
+@media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+  #left * {
+    visibility: hidden;
+  }
+  #right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #pagecontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 5px solid rgba(255, 255, 255, 0) !important;
+    overflow-y: visible !important;
+  }
+  ::-webkit-scrollbar {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #mainwrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
 }

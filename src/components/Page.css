@@ -1,0 +1,120 @@
+#right {
+  display: flex;
+  justify-content: center;
+  min-width: 50vw;
+  height: 100vh;
+}
+#pagecontainer {
+  display: flex;
+  min-height: 100vh;
+  min-width: 98%;
+  background-color: white;
+  border: 5px solid black;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#pagepersonalcontainer {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+#pagenamecontainer {
+  display: flex;
+  margin-top: 30px;
+  width: 700px;
+  justify-content: center;
+}
+#pagenamecontainer > div {
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px;
+  max-width: 50%;
+  margin: 2%;
+  overflow-wrap: break-word;
+}
+#currentprofessiontitle {
+  width: 100%;
+  font-size: x-large;
+  font-weight: bold;
+  color: #1b9aaa;
+  border-bottom: 2px solid black;
+}
+#pagebiographytitle {
+  margin-top: 10px;
+  width: 80%;
+  font-size: larger;
+  font-weight: bold;
+  color: #1b9aaa;
+  border-bottom: 2px solid black;
+}
+#pageprofession {
+  font-weight: bold;
+  font-size: larger;
+}
+#pageprofession,
+#pagebiography {
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+}
+
+#pageworkexperience {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
+
+#pageworkexperience > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+#pageworkexperience > div > p {
+  margin: 2px;
+}
+.pone {
+  font-weight: bolder;
+}
+#pageeducation {
+  display: grid;
+  grid-template-columns: 300px 300px;
+}
+#pageeducation > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+#pageeducation > div > p {
+  margin: 2px;
+}
+
+.label {
+  margin-top: 10px;
+  width: 80%;
+  font-size: larger;
+  font-weight: bold;
+  color: #1b9aaa;
+  border-bottom: 2px solid black;
+}
+#pagecontactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+#phoneemailcontainer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+#phoneemailcontainer > div {
+  margin: 40px;
+}

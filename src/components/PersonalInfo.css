@@ -1,53 +1,52 @@
 #infolabel {
-    position:relative;
-    display: flex;
-    margin-left: 10%;
-    color: #fcfffc;
-    font-size: x-large
-  }
-  
-  #infoinputs {
-    display: flex;
-    flex-direction: column;
-  }
-  #personalinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(#040f0f, #248232);
-    min-height: 40vh;
-    min-width: 40vw;
-    border-radius: 40px;
-  }
-  
-  #infoinputs > input {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #nameinputs {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  #firstname, #lastname {
-    width: 45%;
-  }
-  input {
-    border-radius: 8px;
-    height: 40px;
-    margin-top: 2%;
-    background-color: #2d3a3a;
-    color: #fcfffc;
-    
-  }
-  #biography {
-    height: 140px;
-    border-radius: 8px;
-    margin-top: 2%;
-    background-color: #2d3a3a;
-    color: #fcfffc;
-    margin-left: 10%;
-    margin-right: 10%;
+  position: relative;
+  display: flex;
+  margin-left: 10%;
+  color: #fcfffc;
+  font-size: x-large;
+}
 
-  }
+#infoinputs {
+  display: flex;
+  flex-direction: column;
+}
+#personalinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#040f0f, #248232);
+  min-height: 40vh;
+  min-width: 40vw;
+  border-radius: 40px;
+}
+
+#infoinputs > input {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#nameinputs {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#firstname,
+#lastname {
+  width: 45%;
+}
+input {
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 2%;
+  background-color: #2d3a3a;
+  color: #fcfffc;
+}
+#biography {
+  height: 140px;
+  border-radius: 8px;
+  margin-top: 2%;
+  background-color: #2d3a3a;
+  color: #fcfffc;
+  margin-left: 10%;
+  margin-right: 10%;
+}
