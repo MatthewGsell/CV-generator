@@ -1,3 +1,6 @@
+CV generator built using React with Vite build tool. Type your info on the left hand side and watch a formated cv be generated in real time. 
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
